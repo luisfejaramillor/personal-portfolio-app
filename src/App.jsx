@@ -6,6 +6,9 @@ import { rings, circles } from './assets/images'
 export const App = ()=> {
 	return(
 		<div className="container" >
+			<div className='rings'>
+				<img src={rings} alt="Rings" />
+			</div>
 			<section className="profile" >
 				<div className='rings'>
 					<img src={rings} alt="Rings" />
@@ -46,9 +49,6 @@ export const App = ()=> {
 				<div className='border--line' ></div>
 			</div>
 			<section className="skills" >
-				<div className='rings'>
-					<img src={rings} alt="Rings" />
-				</div>
 				<div className='skills__box' >
 					<h2 className='skills__box--subtitle'>
 						HTML
@@ -98,10 +98,100 @@ export const App = ()=> {
 				<div className='border--line'></div>
 			</div>
 			<section className="projects" >
-			
+				<div className='projects__header' >
+					<h2>Projects</h2>
+					<button>CONTACT ME</button>
+				</div>
+				<div className='projects__box' >
+					<img className='projects__box--img-portfolio' alt="desing portfolio" />
+					<h3>DESING PORTFOLIO</h3>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+					</div>	
+					<div className='projects__box--links'>
+						<div>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>
+						</div>
+					</div>
+				</div>
+				<div className='projects__box' >
+					<img className='projects__box--img-elearnig' alt="elearnig app" />
+					<h3>E-LEARNING LANDING PAGE</h3>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+					</div>	
+					<div className='projects__box--links'>
+						<div>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>
+						</div>
+					</div>
+				</div>
+				<div className='projects__box' >
+					<img className='projects__box--img-todo' alt="todo app" />
+					<h3>TODO WEB APP</h3>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JAVASCRIPT</p>
+					</div>	
+					<div className='projects__box--links'>
+						<div>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>
+						</div>
+					</div>
+				</div>
+				<div className='projects__box' >
+					<img className='projects__box--img-entertainment' alt="entertainment app" />
+					<h3>ENTERTAINMENT WEB APP</h3>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JAVASCRIPT</p>
+					</div>	
+					<div className='projects__box--links'>
+						<div>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>
+						</div>
+					</div>
+				</div>
+				<div className='projects__box' >
+					<img className='projects__box--img-memory' alt="memory app" />
+					<h3>MEMORY GAME</h3>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JAVASCRIPT</p>
+					</div>	
+					<div className='projects__box--links'>
+						<div>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>
+						</div>
+					</div>
+				</div>
+				<div className='projects__box' >
+					<img className='projects__box--img-artgallery' alt="art gallery showcase" />
+					<h3>ART GALLERY SHOWCASE</h3>
+					<div>
+						<p>HTML</p>
+						<p>CSS</p>
+						<p>JAVASCRIPT</p>
+					</div>	
+					<div className='projects__box--links'>
+						<div>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section className="contact" >
-			
 			</section>
 		</div>
 	)

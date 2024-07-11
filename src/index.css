@@ -15,6 +15,13 @@ body{
 	width: 100vw;
 	max-width: 1440px;
 	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	.rings{
+		position: absolute;
+		bottom: 70px;
+		right: -265px;
+	}
 	.profile{
 		display: flex;
 		flex-direction: column;
@@ -121,14 +128,77 @@ body{
 				font-weight: 500;
 			}
 		}
-		.rings{
-			position: absolute;
-			bottom: -70px;
-			right: -250px;
-		}
 	}
 	.projects{
 		margin-top: 80px;
+		padding: 0px 16px 0 16px;
+		&__header{
+			display: flex;
+			justify-content: space-between;
+			h2{
+				font-size: 42px;
+				font-weight: bold;
+			}
+			button{
+				font-family: inherit;
+				color: inherit;
+				font-weight: bold;
+				font-size: 16px;
+				margin-top: 24px;
+				background-color: #151515;
+				border: none;
+				border-bottom: 2px solid #4EE1A0;
+				padding-bottom: 10px;
+			}
+		}
+		&__box{
+			display: grid;
+			grid-template-columns: 1fr;
+			&--img{
+				&-portfolio{
+					aspect-ratio: 343/253;
+					width: 100%;
+					background-size: cover;
+					background-position: center;
+					background-image: url("./assets/images/thumbnail-project-1-small.webp");
+				}
+				&-elearnig{
+					aspect-ratio: 343/253;
+					width: 100%;
+					background-size: cover;
+					background-position: center;
+					background-image: url("./assets/images/thumbnail-project-2-small.webp");
+				}
+				&-todo{
+					aspect-ratio: 343/253;
+					width: 100%;
+					background-size: cover;
+					background-position: center;
+					background-image: url("./assets/images/thumbnail-project-3-small.webp");
+				}
+				&-entertainment{
+					aspect-ratio: 343/253;
+					width: 100%;
+					background-size: cover;
+					background-position: center;
+					background-image: url("./assets/images/thumbnail-project-4-small.webp");
+				}
+				&-memory{
+					aspect-ratio: 343/253;
+					width: 100%;
+					background-size: cover;
+					background-position: center;
+					background-image: url("./assets/images/thumbnail-project-5-small.webp");
+				}
+				&-artgallery{
+					aspect-ratio: 343/253;
+					width: 100%;
+					background-size: cover;
+					background-position: center;
+					background-image: url("./assets/images/thumbnail-project-6-small.webp");
+				}
+			}
+		}
 	}
 	.border{
 		width: 100%;
