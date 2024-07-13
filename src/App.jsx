@@ -102,89 +102,87 @@ export const App = ()=> {
 					<h2>Projects</h2>
 					<button>CONTACT ME</button>
 				</div>
-				<div className='projects__box' >
-					<img className='projects__box--img-portfolio' alt="desing portfolio" />
-					<h3>DESING PORTFOLIO</h3>
-					<div>
-						<p>HTML</p>
-						<p>CSS</p>
-					</div>	
-					<div className='projects__box--links'>
-						<div>
+				<div className='projects__main' >
+					<div className='projects__main--box' >
+						<div className='projects__main--box--img portfolio' >
+							
+						</div>
+						<h3>DESING PORTFOLIO</h3>
+						<div className='projects__main--box--text' >
+							<p>HTML</p>
+							<p>CSS</p>
+						</div>	
+						<div className='projects__main--box--links'>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>						
+						</div>
+					</div>
+					<div className='projects__main--box' >
+						<div className='projects__main--box--img elearnig' >
+							
+						</div>
+						<h3>E-LEARNING LANDING PAGE</h3>
+						<div className='projects__main--box--text' >
+							<p>HTML</p>
+							<p>CSS</p>
+						</div>	
+						<div className='projects__main--box--links'>
+							<button>VIEW PROJECT</button>
+							<button>VIEW CODE</button>						
+						</div>
+					</div>
+					<div className='projects__main--box' >
+						<div className='projects__main--box--img todo' >
+						</div>
+						<h3>TODO WEB APP</h3>
+						<div className='projects__main--box--text' >
+							<p>HTML</p>
+							<p>CSS</p>
+							<p>JAVASCRIPT</p>
+						</div>	
+						<div className='projects__main--box--links'>						
 							<button>VIEW PROJECT</button>
 							<button>VIEW CODE</button>
 						</div>
 					</div>
-				</div>
-				<div className='projects__box' >
-					<img className='projects__box--img-elearnig' alt="elearnig app" />
-					<h3>E-LEARNING LANDING PAGE</h3>
-					<div>
-						<p>HTML</p>
-						<p>CSS</p>
-					</div>	
-					<div className='projects__box--links'>
-						<div>
+					<div className='projects__main--box' >
+						<div className='projects__main--box--img entertainment' >
+						</div>
+						<h3>ENTERTAINMENT WEB APP</h3>
+						<div className='projects__main--box--text' >
+							<p>HTML</p>
+							<p>CSS</p>
+							<p>JAVASCRIPT</p>
+						</div>	
+						<div className='projects__main--box--links'>
 							<button>VIEW PROJECT</button>
 							<button>VIEW CODE</button>
 						</div>
 					</div>
-				</div>
-				<div className='projects__box' >
-					<img className='projects__box--img-todo' alt="todo app" />
-					<h3>TODO WEB APP</h3>
-					<div>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JAVASCRIPT</p>
-					</div>	
-					<div className='projects__box--links'>
-						<div>
+					<div className='projects__main--box' >
+						<div className='projects__main--box--img memory' >
+						</div>
+						<h3>MEMORY GAME</h3>
+						<div className='projects__main--box--text' >
+							<p>HTML</p>
+							<p>CSS</p>
+							<p>JAVASCRIPT</p>
+						</div>	
+						<div className='projects__main--box--links'>
 							<button>VIEW PROJECT</button>
 							<button>VIEW CODE</button>
 						</div>
 					</div>
-				</div>
-				<div className='projects__box' >
-					<img className='projects__box--img-entertainment' alt="entertainment app" />
-					<h3>ENTERTAINMENT WEB APP</h3>
-					<div>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JAVASCRIPT</p>
-					</div>	
-					<div className='projects__box--links'>
-						<div>
-							<button>VIEW PROJECT</button>
-							<button>VIEW CODE</button>
+					<div className='projects__main--box' >
+						<div className='projects__main--box--img artgallery' >
 						</div>
-					</div>
-				</div>
-				<div className='projects__box' >
-					<img className='projects__box--img-memory' alt="memory app" />
-					<h3>MEMORY GAME</h3>
-					<div>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JAVASCRIPT</p>
-					</div>	
-					<div className='projects__box--links'>
-						<div>
-							<button>VIEW PROJECT</button>
-							<button>VIEW CODE</button>
-						</div>
-					</div>
-				</div>
-				<div className='projects__box' >
-					<img className='projects__box--img-artgallery' alt="art gallery showcase" />
-					<h3>ART GALLERY SHOWCASE</h3>
-					<div>
-						<p>HTML</p>
-						<p>CSS</p>
-						<p>JAVASCRIPT</p>
-					</div>	
-					<div className='projects__box--links'>
-						<div>
+						<h3>ART GALLERY SHOWCASE</h3>
+						<div className='projects__main--box--text' >
+							<p>HTML</p>
+							<p>CSS</p>
+							<p>JAVASCRIPT</p>
+						</div>	
+						<div className='projects__main--box--links'>
 							<button>VIEW PROJECT</button>
 							<button>VIEW CODE</button>
 						</div>
@@ -192,6 +190,26 @@ export const App = ()=> {
 				</div>
 			</section>
 			<section className="contact" >
+				<div className='contact__form-group' >
+					<h3>Contact</h3>
+					<p>
+					I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.
+					</p>
+				</div>
+				<form action="POST" method="post">
+					<div className='contact__form-group' >
+						<input type="text" placeholder='NAME' name='name' />
+					</div>
+					<div className='contact__form-group' >
+						<input type="email" placeholder='EMAIL' name='email' />
+					</div>
+					<div className='contact__form-group' >
+						<input type="text" placeholder='MESSAGE' name='message' />
+					</div>
+					<button type='submit' >
+						SEND MESSAGE
+					</button>
+				</form>
 			</section>
 		</div>
 	)
